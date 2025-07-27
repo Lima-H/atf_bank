@@ -4,3 +4,5 @@ codigos_antigos/.env
 modelgpt/.env
 .env
 venv/
+.streamlit/
+__pycache__/

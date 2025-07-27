@@ -1,14 +1,19 @@
 import os
-from dotenv import load_dotenv
+
 import re
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
 import pandas as pd
 import io
 from similaridade_nomes import normalizar_origens
+import streamlit as st
 
-load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY")
+# Acessando as variáveis do secrets.toml
+api_key = st.secrets["OPENAI_API_KEY"]
+
+# from dotenv import load_dotenv
+# load_dotenv()
+# api_key = os.getenv("OPENAI_API_KEY")
 
 llm = ChatOpenAI(
     api_key=api_key,

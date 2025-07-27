@@ -1,0 +1,9 @@
+streamlit
+pdf2image
+google-api-python-client
+google-auth
+google-auth-oauthlib
+pandas
+openai
+requests
+pymupdf
