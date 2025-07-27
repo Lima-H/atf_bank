@@ -7,3 +7,4 @@ pandas
 openai
 requests
 pymupdf
+langchain-openai
